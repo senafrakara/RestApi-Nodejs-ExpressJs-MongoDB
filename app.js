@@ -14,6 +14,7 @@ app.use(express.json());
 
 const route_courses = require("./routes/courses");
 
+app.use(cors());
 app.use("/api/courses", route_courses); //middleware
 //to create a route and to access that, this is the first step to do. 
 
