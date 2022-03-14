@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "c1c5cfb8-6814-4742-8039-23361f412276",
+		"name": "api-nodejs-express-js-mongodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"course\" : \"Api Course 2\",\r\n    \"tag\" : \"apicourse2\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/courses/create-course",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses",
+						"create-course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/courses/all-courses",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses",
+						"all-courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/courses/get-course/622e7e2b51b6ac1d39f4d9cbd",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses",
+						"get-course",
+						"622e7e2b51b6ac1d39f4d9cbd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"course\" : \"Express Js New Course\",\r\n    \"tag\" :\"expressjsnew\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/courses/update-course/622e7e2b51b6ac1d39f4d9cb",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses",
+						"update-course",
+						"622e7e2b51b6ac1d39f4d9cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/courses/delete-course/622e7e2b51b6ac1d39f4d9cb",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses",
+						"delete-course",
+						"622e7e2b51b6ac1d39f4d9cb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
