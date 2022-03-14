@@ -1,6 +1,7 @@
 const express = require("express");
 const { default: mongoose } = require("mongoose");
 const app = express();
+const cors = require("cors");
 require("dotenv/config");
 
 //as express supports function that body_parser performs, we dont need to use this anymore.
